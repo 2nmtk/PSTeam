@@ -14,14 +14,5 @@ Usage:
 5. Choose your list file (csv format)
 
 
-*** Csv file format:
-mail
-(name1)@(domain)
-(name2)@(domain)
-(name3)@(domain)
-.
-.
-.
-(name#)@(domain)
-
+*** Csv file format: list.csv
 
