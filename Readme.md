@@ -1,4 +1,4 @@
-Powershell script for add multile Teams's users to group from a csv list
+Powershell script for add multiple Teams's users to group from a csv list
 
 Install:
 PSTeam run on Microsoft Teams module 1.0.0 for Powershell 
