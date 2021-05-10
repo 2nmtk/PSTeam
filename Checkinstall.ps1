@@ -12,7 +12,7 @@ if (Get-InstalledModule -Name MicrosoftTeams -RequiredVersion 1.0.0) {
           Install-Module -Name MicrosoftTeams -RequiredVersion 1.0.0 -AllowClobber -Confirm:$False -Force                
       }
       catch [Exception] {
-          $_.message 
+          $_.message
           exit
       }
   }
