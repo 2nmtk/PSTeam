@@ -13,15 +13,13 @@ Function ConnectTeams {
 }
 Function AddUser {
     [void]$FileBrowser.ShowDialog()
-
     $File = $FileBrowser.FileName;
-
         If($FileBrowser.FileNames -like "*\*") 
             {
             $FileBrowser.FileName 
             }
             else{
-                Write-Host "Choose agian"
+                Write-Host "Choose again"
                 ChooseGroup
                  }
    $Addmember = Import-Csv -Path $FileBrowser.FileName | Foreach {Add-TeamUser -GroupId $NhomID[$n-1] -user $_.mail}
@@ -37,7 +35,7 @@ if( $n -match "^[\d\.]+$" -And $n -le $NhomID.Count)
     }
     Else 
     {
-    Write-Host "Choose agian"
+    Write-Host "Choose again"
     ChooseGroup
     }
 }
